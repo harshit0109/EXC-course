@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+   <children>
+
+      <Text fx:id="winnerText" layoutX="182.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="237.9443359375">
+         <font>
+            <Font size="39.0"/>
+         </font>
+      </Text>
+
+      <GridPane layoutX="188.0" layoutY="115.0" hgap="10" vgap="10">
+         <children>
+            <Button fx:id="button1" GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="75.0" prefWidth="75.0"/>
+            <Button fx:id="button2" GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="75.0" prefWidth="75.0"/>
+            <Button fx:id="button3" GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="75.0" prefWidth="75.0"/>
+
+            <Button fx:id="button4" GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="75.0" prefWidth="75.0"/>
+            <Button fx:id="button5" GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="75.0" prefWidth="75.0"/>
+            <Button fx:id="button6" GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="75.0" prefWidth="75.0"/>
+
+            <Button fx:id="button7" GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="75.0" prefWidth="75.0"/>
+            <Button fx:id="button8" GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="75.0" prefWidth="75.0"/>
+            <Button fx:id="button9" GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="75.0" prefWidth="75.0"/>
+         </children>
+      </GridPane>
+
+      <Button layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#restartGame" text="Restart"/>
+      
+   </children>
+</AnchorPane>
